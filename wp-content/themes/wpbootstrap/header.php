@@ -25,7 +25,7 @@
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
+    <link href="<?php bloginfo('template_url') ?>/style.css" rel="stylesheet">
     <?php wp_head(); ?>
 </head>
 <body>
