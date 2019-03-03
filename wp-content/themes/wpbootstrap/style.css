@@ -116,6 +116,7 @@ h1, h2, h3, h4, h5, h6 {
 .blog-post-title {
   margin-bottom: .25rem;
   font-size: 2.5rem;
+  color: red;
 }
 .blog-post-meta {
   margin-bottom: 1.25rem;
@@ -134,4 +135,48 @@ h1, h2, h3, h4, h5, h6 {
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
+}
+
+.comments {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.comments h3, .comments h2 {
+    background: #428bca;
+    color: #333;
+    padding: 5px;
+}
+
+.comment-body {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 20px 10px;
+}
+
+.comment-meta {
+    background: #428bca;
+    padding: 10px;
+    overflow: auto;
+}
+
+.comment-meta img {
+    float: left;
+    margin-right: 10px;
+}
+
+.comment-reply-link {
+    background: #428bca;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.comment-form input, .comment-form textarea {
+    width: 100%;
+    padding: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
 }
