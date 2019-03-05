@@ -2,7 +2,8 @@
     function myprefix_load_css_and_js() {
     wp_enqueue_style( 'style', get_stylesheet_uri() );
 }
-    add_action( 'wp_enqueue_scripts', 'myprefix_load_css_and_js' );
+    // loads style.css but shouldnt be needed?
+    // add_action( 'wp_enqueue_scripts', 'myprefix_load_css_and_js' );
     # theme support
     function wpb_theme_setup(){
         add_theme_support('post-thumbnails');
