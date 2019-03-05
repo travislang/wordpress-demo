@@ -24,7 +24,7 @@
     </style>
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
-    <!-- Custom styles for this template -->
+    <!-- style.css isnt getting loaded but is in inspector -->
     <link href="<?php bloginfo('template_url') ?>/style.css" rel="stylesheet">
     <?php wp_head(); ?>
 </head>
