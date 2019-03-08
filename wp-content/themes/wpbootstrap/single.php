@@ -1,3 +1,5 @@
+<!-- template for rendering single posts -->
+
 <?php get_header(); ?>
 <main role="main" class="container">
     <div class="row">
