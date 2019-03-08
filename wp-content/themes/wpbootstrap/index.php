@@ -1,3 +1,5 @@
+
+<!-- gets header and then checks for posts and loops through them -->
 <?php get_header(); ?>
                 <?php if(have_posts()): ?>
                     <?php while(have_posts()) : the_post(); ?>
