@@ -10,9 +10,11 @@
 
  // exit if accessed directly
 
-    if(!defined('ABS_PATH')){
-        exit;
-    }
+    // if(!defined('ABS_PATH')){
+    //     exit;
+    // }
+
+    defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
     // load scripts
     require_once(plugin_dir_path(__FILE__). '/inc/pushnotifications-scripts.php');
