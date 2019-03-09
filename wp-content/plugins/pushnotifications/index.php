@@ -14,4 +14,5 @@
         exit;
     }
 
-    echo '123';
+    // load scripts
+    require_once(plugin_dir_path(__FILE__). '/inc/pushnotifications-scripts.php');
