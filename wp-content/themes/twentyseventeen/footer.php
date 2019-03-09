@@ -39,8 +39,10 @@
 					<?php
 				endif;
 
-				get_template_part( 'template-parts/footer/site', 'info' );
+                get_template_part( 'template-parts/footer/site', 'info' );
+                do_action('np_bottom_footer');
 				?>
+                
 			</div><!-- .wrap -->
 		</footer><!-- #colophon -->
 	</div><!-- .site-content-contain -->
