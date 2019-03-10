@@ -14,7 +14,24 @@ const registerServiceWorker = async () => {
     return swRegistration;
 }
 
+const requestNotificationPermission = async () => {
+    const permission = await window.Notification.requestPermission();
+    if (permission !== 'granted') {
+        throw new Error('Permission not granted for Notification');
+    }
+}
+
+const showLocalNotification = (title, body, swRegistration) => {
+    const options = {
+        body,
+        // here you can add more properties like icon, image, vibrate, etc.
+    };
+    swRegistration.showNotification(title, options);
+}
+
 const main = async () => {
     checkForServiceWorker();
     const swRegistration = await registerServiceWorker();
+    const permission = await requestNotificationPermission();
+    showLocalNotification('Test Notification', 'this is a message', swRegistration);
 }
