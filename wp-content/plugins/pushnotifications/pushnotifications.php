@@ -17,7 +17,7 @@
     add_action('np_bottom_footer', 'include_button');
     function include_button(){
         ?>
-        <button onclick='sayHi()'>Turn on Push Notifications</button>
+        <button onclick='main()'>Turn on Push Notifications</button>
 <?php
     };
 ?>
