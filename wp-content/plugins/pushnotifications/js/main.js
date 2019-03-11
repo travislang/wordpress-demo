@@ -31,7 +31,10 @@ const showLocalNotification = (title, body, swRegistration) => {
 
 const main = async () => {
     checkForServiceWorker();
+    // reg service worker
     const swRegistration = await registerServiceWorker();
+    // request push notification permissions
     const permission = await requestNotificationPermission();
+    // test push notification
     showLocalNotification('Test Notification', 'this is a message', swRegistration);
 }
