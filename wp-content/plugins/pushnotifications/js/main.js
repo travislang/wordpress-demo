@@ -15,6 +15,7 @@ const registerServiceWorker = async () => {
 }
 
 const requestNotificationPermission = async () => {
+    //requests permission from the user to send push notifications
     const permission = await window.Notification.requestPermission();
     if (permission !== 'granted') {
         throw new Error('Permission not granted for Notification');
@@ -22,9 +23,9 @@ const requestNotificationPermission = async () => {
 }
 
 const showLocalNotification = (title, body, swRegistration) => {
+    // these options are what is shown in the actual push notification
     const options = {
         body,
-        // here you can add more properties like icon, image, vibrate, etc.
     };
     swRegistration.showNotification(title, options);
 }
