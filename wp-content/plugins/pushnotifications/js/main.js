@@ -17,6 +17,7 @@ const registerServiceWorker = async () => {
 const requestNotificationPermission = async () => {
     //requests permission from the user to send push notifications
     const permission = await window.Notification.requestPermission();
+    // this checks if there is already permission given
     if (permission !== 'granted') {
         throw new Error('Permission not granted for Notification');
     }
